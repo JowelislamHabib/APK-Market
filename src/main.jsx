@@ -3,11 +3,16 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
+import RootLayout from "./layout/RootLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    Component: RootLayout,
+  },
+  {
+    path: "/apps",
+    element: <div>All Apps</div>,
   },
 ]);
 
