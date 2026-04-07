@@ -4,6 +4,8 @@ import "./index.css";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import RootLayout from "./layout/RootLayout";
+import Apps from "./pages/apps/Apps";
+import InstalledApps from "./pages/installedApps/InstalledApps";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +19,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/apps",
-        element: <div>All Apps</div>,
+        Component: Apps,
+      },
+      {
+        path: "/installedapps",
+        Component: InstalledApps,
       },
     ],
     errorElement: (
