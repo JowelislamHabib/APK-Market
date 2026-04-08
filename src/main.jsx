@@ -13,7 +13,6 @@ const router = createBrowserRouter([
     Component: RootLayout,
     children: [
       {
-        path: "/",
         index: true,
         element: <h2>Homepage</h2>,
       },
@@ -24,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/installedapps",
         Component: InstalledApps,
+      },
+      {
+        path: "/dashboard",
+        element: <h2>Dashboard Upcoming</h2>,
       },
     ],
     errorElement: (
