@@ -38,7 +38,7 @@ const NavBar = () => {
       </li>
       <li>
         <NavLink
-          to="/installedapps"
+          to="/dashboard"
           className={({ isActive }) =>
             isActive ? "text-green-500 font-bold" : ""
           }
@@ -79,8 +79,10 @@ const NavBar = () => {
               {links}
             </ul>
           </div>
-
-          <img className="w-[50px]" src={logo} alt="Apk market logo" />
+          <div className="flex justify-between items-center gap-2">
+            <img className="w-[50px]" src={logo} alt="Apk market logo" />
+            <h1 className="text-success text-3xl font-bold">APK Market</h1>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
