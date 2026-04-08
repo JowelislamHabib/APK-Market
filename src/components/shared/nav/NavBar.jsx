@@ -2,6 +2,7 @@ import React from "react";
 
 import logo from "../../../assets/images/Logo.webp";
 import { NavLink } from "react-router";
+import { MdCloudUpload } from "react-icons/md";
 
 const NavBar = () => {
   const links = (
@@ -88,7 +89,9 @@ const NavBar = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-success text-white">Contribute</a>
+          <a className="btn btn-success text-white">
+            <MdCloudUpload /> Contribute
+          </a>
         </div>
       </div>
     </div>
